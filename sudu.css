@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;}
+body{
+    width:1500px;
+}
+header{
+    height:70px;
+    width: 1780px;
+    background-color:antiquewhite ;
+    text-align: center;
+    color: black;
+    font-family:'Kenia', cursive ;
+    font-weight: 400;
+    font-size: 40px;
+}
+.game{
+    display: flex;
+}
+#ans{
+    margin-top: 30px;
+}
+.head{
+    position: relative;
+    top:10px;
+}
+.khatra{
+    color:red;
+}
+.count{
+    font-family: 'Prosto One', cursive;
+    color:red;
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 1000;
+}
+.selected{
+    background-color: antiquewhite;
+}
+.container{
+    margin-top: 50px;
+    margin-left: 200px;
+    padding: 100px 150px;
+    height:40em;
+    border: 2px solid aquamarine;
+    background-color: aquamarine;
+    border-radius: 20px;
+    display: flex;
+}
+.Board{
+    display: flex;
+    flex-direction: row;
+}
+.outerBoard{
+    display:flex;
+    flex-direction: column;
+}
+.board{
+    display: grid;
+    grid-template-rows: (9,1fr);
+}
+.cell{
+    border:1px solid red;
+    height:60px;
+    width: 60px;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+
+}
+.ppp{
+display: flex;
+flex-direction: column;
+margin-left:150px;
+}
+.button{
+    font-size: 30px;
+    color: azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 50px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: rgb(126, 126, 243);
+}
+.NumPad{
+    display: grid;
+    height:200px;
+    width: 200px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin-bottom: 30px;
+    
+}
+
+.pad{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    align-items: center;
+    border: 1px solid peru;
+}
+.pad:hover{background-color: antiquewhite;}
+.cell:hover{background-color: antiquewhite;}
+.button:hover{
+    background-color: bisque;
+    color: black;
+}
+.bl-2{border-left: 3px solid peru;}
+.br-2{border-right:3px solid peru;}
+.bb-2{border-bottom:3px solid peru;}
+.bt-2{border-top: 3px solid peru;}
+.bl-0{border-left: 0 solid aquamarine;}
+.br-0{border-right: 0;}
+.bb-0{border-bottom: 0;}
+.bt-0{border-top: 0;}
+
+.bl-4{border-left: 4px solid b;}
+.br-4{border-right:4px solid  red;}
+.bb-4{border-bottom:4px solid  red;}
+.bt-4{border-top: 4px solid  red;}
+ @media screen and (max-width:500px){
+    .container{
+        display:flex;
+        flex-direction: column;
+        height:60em;
+    }
+    .outerBoard{
+        margin-bottom: 100px;
+    }
+    .ppp{
+        margin-left: 100px;}
+    .giphy-embed{
+        position:relative;
+        left:300px;
+        top:-220px;
+        height: 100px;
+        width: 60px;
+    }
+    .button{
+        width: 370px;
+    }
+ }
